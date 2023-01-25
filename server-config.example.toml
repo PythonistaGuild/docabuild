@@ -1,5 +1,11 @@
 # rename this file to server-config.toml
 
+[users]
+superuser-name = "admin"
+superuser-password = "password" # change this to be something secure
+allow-user-creation = true # when enabled, anyone can create an account.
+allow-project-creation = false # this only applies to users who are not the superuser
+
 [api]
 host = "0.0.0.0"
 port = 1006
